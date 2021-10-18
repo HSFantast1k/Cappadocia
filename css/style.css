@@ -65,6 +65,27 @@ body {
     padding: 0 15px;
 }
 
+.section-page {
+    margin: 200px 0;
+}
+
+.title {
+    font-family: "balqis";
+    font-size: 96px;
+    line-height: 128px;
+    color: #E2AB3F;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.title span {
+    display: block;
+    font-family: 'RobotoCondensed-LightItalic';
+    color: #000;
+    font-size: 24px;
+    line-height: 28px;
+}
+
 .header {
     background-image: url('../images/header-bg.jpg');
     background-position: bottom center;
@@ -112,7 +133,7 @@ body {
     transform: translateY(-50%);
 }
 
-.header-title {
+.header__title {
     font-family: 'balqis';
     text-align: center;
     font-weight: normal;
@@ -120,7 +141,8 @@ body {
     line-height: 334px;
 }
 
-.header-title span{
+
+.header__title span{
     font-family: 'RobotoCondensed-LightItalic';
     display: block;
     font-size: 56px;
@@ -128,4 +150,61 @@ body {
     text-align: right;
     margin-top: -65px;
     margin-right: 80px;
+}
+
+.fairy-tail {
+
+}
+
+.fairy-tail__inner {
+    position: relative;
+}
+
+
+.fairy-tail__title span{
+    margin-top: -30px;
+    margin-left: 185px;
+}
+
+.fairy-tail__slider {
+    width: 50%;
+}
+
+.slick-btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+
+.fairy-tail__container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.fairy-tail__body {
+    width: 50%;
+    margin-left: auto;
+    padding-left: 55px;
 }
