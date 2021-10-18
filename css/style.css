@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'balqis';
+    src: url('../fons/balqis.woff2') format('woff2'),
+        url('../fons/balqis.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Light';
+    src: url('../fons/RobotoCondensed-Light.woff2') format('woff2'),
+        url('../fons/RobotoCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-LightItalic';
+    src: url('../fons/RobotoCondensed-LightItalic.woff2') format('woff2'),
+        url('../fons/RobotoCondensed-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../fons/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../fons/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    color: #000;
+    font-family: 'RobotoCondensed-Light';   
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-image: url('../images/header-bg.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 72px;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'RobotoCondensed-Regular';
+    padding-bottom: 152px;
+}
+
+.menu__list-item {
+    display: inline-block;
+}
+
+.menu__list-item + .menu__list-item{
+    margin-left: 52px;
+}
+
+.menu__list-link:hover {
+    text-decoration: underline;
+}
+
+.phone {
+    padding-left: 40px;
+    position: relative;
+}
+
+.phone::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/icons/phone-icon.svg');
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-title {
+    font-family: 'balqis';
+    text-align: center;
+    font-weight: normal;
+    font-size: 250px;
+    line-height: 334px;
+}
+
+.header-title span{
+    font-family: 'RobotoCondensed-LightItalic';
+    display: block;
+    font-size: 56px;
+    line-height: 66px;
+    text-align: right;
+    margin-top: -65px;
+    margin-right: 80px;
+}
